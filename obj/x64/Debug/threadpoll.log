@@ -1,0 +1,27 @@
+﻿  正在验证源
+  正在将源远程复制到“10.16.5.138”
+  正在验证体系结构
+  正在验证体系结构
+  正在启动远程生成
+  正在编译源:
+  threadpoll.c
+C:\Users\Administrator\source\repos\threadpoll\threadpoll.c(37,62): warning : conversion to ‘long unsigned int’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+C:\Users\Administrator\source\repos\threadpoll\threadpoll.c(37,62): warning :    37 |                 pool->taskqueue = (task*)malloc(sizeof(task) * capacity);
+C:\Users\Administrator\source\repos\threadpoll\threadpoll.c(37,62): warning :       |                                                              ^
+C:\Users\Administrator\source\repos\threadpoll\threadpoll.c(72,72): warning : conversion to ‘long unsigned int’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+C:\Users\Administrator\source\repos\threadpoll\threadpoll.c(72,72): warning :    72 |                 pool->threadIDs = (pthread_t*)malloc(sizeof(pthread_t) * maxNum); // ���ȴ��������߳������ռ�
+C:\Users\Administrator\source\repos\threadpoll\threadpoll.c(72,72): warning :       |                                                                        ^
+C:\Users\Administrator\source\repos\threadpoll\threadpoll.c(77,69): warning : statement with no effect [-Wunused-value]
+C:\Users\Administrator\source\repos\threadpoll\threadpoll.c(77,69): warning :    77 |                 for (int i = 0; i < maxNum; i++) pool->threadIDs[i] == -1;
+C:\Users\Administrator\source\repos\threadpoll\threadpoll.c(77,69): warning :       |                                                  ~~~~~~~~~~~~~~~~~~~^~~~~
+C:\Users\Administrator\source\repos\threadpoll\threadpoll.c(110,46): warning : unsigned conversion from ‘int’ to ‘pthread_t’ {aka ‘long unsigned int’} changes value from ‘-1’ to ‘18446744073709551615’ [-Wsign-conversion]
+C:\Users\Administrator\source\repos\threadpoll\threadpoll.c(110,46): warning :   110 |                         pool->threadIDs[i] = -1;
+C:\Users\Administrator\source\repos\threadpoll\threadpoll.c(110,46): warning :       |                                              ^
+C:\Users\Administrator\source\repos\threadpoll\threadpoll.c(198,17): warning : implicit declaration of function ‘sleep’ [-Wimplicit-function-declaration]
+C:\Users\Administrator\source\repos\threadpoll\threadpoll.c(198,17): warning :   198 |                 sleep(3);
+C:\Users\Administrator\source\repos\threadpoll\threadpoll.c(198,17): warning :       |                 ^~~~~
+C:\Users\Administrator\source\repos\threadpoll\threadpoll.c(327,1): warning : control reaches end of non-void function [-Wreturn-type]
+C:\Users\Administrator\source\repos\threadpoll\threadpoll.c(327,1): warning :   327 | }
+C:\Users\Administrator\source\repos\threadpoll\threadpoll.c(327,1): warning :       | ^
+  正在链接对象
+  threadpoll.vcxproj -> C:\Users\Administrator\source\repos\threadpoll\bin\x64\Debug\threadpoll.out

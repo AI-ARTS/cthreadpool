@@ -1,0 +1,1 @@
+g++ -o "/home/aldd/projects/threadpoll/bin/x64/Debug/threadpoll.out" -Wl,--no-undefined -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack /home/aldd/projects/threadpoll/obj/x64/Debug/main.o /home/aldd/projects/threadpoll/obj/x64/Debug/threadpoll.o
